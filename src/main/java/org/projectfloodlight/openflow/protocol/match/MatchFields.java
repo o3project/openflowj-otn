@@ -63,4 +63,9 @@ public enum MatchFields {
     BSN_TCP_FLAGS,
     BSN_VLAN_XLATE_PORT_GROUP_ID,
     BSN_L2_CACHE_HIT,
+    /* -------------------------- Fujitsu code start -------------------------- */
+    /* Add Optical(OTN) parameters */
+    ODU_SIGTYPE,
+    ODU_SIGID,
+    /* -------------------------- Fujitsu code end ---------------------------- */
 }

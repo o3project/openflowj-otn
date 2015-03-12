@@ -169,6 +169,11 @@ class OFMatchV3Ver13 implements OFMatchV3 {
             case UDP_SRC:
             case VLAN_PCP:
             case VLAN_VID:
+            /* -------------------------- Fujitsu code start -------------------------- */
+            /* Add Optical(OTN) parameters */
+            case ODU_SIGTYPE:
+            case ODU_SIGID:
+            /* -------------------------- Fujitsu code end ---------------------------- */
                 return true;
             default:
                 return false;

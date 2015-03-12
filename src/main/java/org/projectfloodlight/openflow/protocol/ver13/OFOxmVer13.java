@@ -402,6 +402,15 @@ abstract class OFOxmVer13 {
                case (int) 0x80004d10:
                    // discriminator value 0x80004d10L=0x80004d10L for class OFOxmTunnelIdMaskedVer13
                    return OFOxmTunnelIdMaskedVer13.READER.readFrom(bb);
+               /* -------------------------- Fujitsu code start -------------------------- */
+               /* Add Optical(OTN) parameters */
+               case (int) 0xffff0401:
+                   // discriminator value 0xffff0401L=0xffff0401L for class OFOxmOduSigtypeVer13
+                   return OFOxmOduSigtypeVer13.READER.readFrom(bb);
+               case (int) 0xffff0605:
+                   // discriminator value 0xffff0605L=0xffff0605L for class OFOxmOduSigidVer13
+                   return OFOxmOduSigidVer13.READER.readFrom(bb);
+               /* -------------------------- Fujitsu code end ---------------------------- */
                default:
                    throw new OFParseError("Unknown value for discriminator typeLen of class OFOxmVer13: " + typeLen);
             }

@@ -19,6 +19,8 @@ import org.projectfloodlight.openflow.types.OFMetadata;
 import org.projectfloodlight.openflow.types.OFPort;
 import org.projectfloodlight.openflow.types.OFValueType;
 import org.projectfloodlight.openflow.types.OFVlanVidMatch;
+import org.projectfloodlight.openflow.types.OduSigid;
+import org.projectfloodlight.openflow.types.OduSigtype;
 import org.projectfloodlight.openflow.types.TransportPort;
 import org.projectfloodlight.openflow.types.U16;
 import org.projectfloodlight.openflow.types.U64;
@@ -255,6 +257,15 @@ public class MatchField<F extends OFValueType<F>> {
 
     public final static MatchField<OFBooleanValue> BSN_L2_CACHE_HIT =
             new MatchField<OFBooleanValue>("bsn_l2_cache_hit", MatchFields.BSN_L2_CACHE_HIT);
+
+    /* -------------------------- Fujitsu code start -------------------------- */
+    /* Add Optical(OTN) parameters */
+    public final static MatchField<OduSigtype> ODU_SIGTYPE =
+            new MatchField<OduSigtype>("odu_sigtype", MatchFields.ODU_SIGTYPE);
+
+    public final static MatchField<OduSigid> ODU_SIGID =
+            new MatchField<OduSigid>("odu_sigid", MatchFields.ODU_SIGID);
+    /* -------------------------- Fujitsu code end ---------------------------- */ 
 
     public String getName() {
         return name;
