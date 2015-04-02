@@ -7,6 +7,8 @@ openflowj-otn is used by DummyOptNode in order to handle OpenFlow1.3 with OTN pa
 
 Please see [starting guide](http://www.o3project.org/ja/fujitsu/docs/getting_started_OPT.pdf) for detailed instructions of "Opt-transport apps of O3 orchestrator & controller suite". 
 
+**Please also look at the** [**Web page that easily explained our OSS**](http://www.o3project.org/ja/fujitsu/index.html)  ... Only the Japanese page provided now.
+
 Environment
 --------------------------
 Middleware: Oracle Java VM jdk1.7.0_51、Maven 3  
