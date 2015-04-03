@@ -44,7 +44,7 @@ class OFOxmOduSigidVer13 implements OFOxmOduSigid {
     private static final Logger logger = LoggerFactory.getLogger(OFOxmOduSigidVer13.class);
     // version: 1.3
     final static byte WIRE_VERSION = 4;
-    final static int LENGTH = 5;
+    final static int LENGTH = 9;
 
         private final static OduSigid DEFAULT_VALUE = OduSigid.NONE;
 
